@@ -1,0 +1,5 @@
+install.packages('pracma')
+library(pracma)
+sp500_31 = scan('sp500_31Dec59-30Dec16.txt')
+mean_sp500_31 = movavg(x = sp500_31, n = 1506)
+plot(mean_sp500_31)
