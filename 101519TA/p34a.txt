@@ -1,0 +1,15 @@
+> summary(fit.ols)
+Call:
+lm(formula = resp ~ -1 + pred1 + pred2)
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.0386 -0.7069 -0.0441  0.6961  3.8108 
+Coefficients:
+      Estimate Std. Error t value Pr(>|t|)    
+pred1  1.54807    0.02552   60.66   <2e-16 ***
+pred2 -0.59309    0.02552  -23.24   <2e-16 ***
+---
+Signif. codes:  0 *** 0.001 ** 0.01 * 0.05 . 0.1   1
+Residual standard error: 1.037 on 996 degrees of freedom
+Multiple R-squared:  0.9638,	Adjusted R-squared:  0.9637 
+F-statistic: 1.325e+04 on 2 and 996 DF,  p-value: < 2.2e-16

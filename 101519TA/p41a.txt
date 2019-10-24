@@ -1,0 +1,45 @@
+> summary(trend.ols)
+Call:
+lm(formula = trend ~ x1 + x3)
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.25597 -0.54817 -0.07825  0.47170  1.51276 
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 3.147e+02  9.469e-02 3323.21   <2e-16 ***
+x1          6.734e-02  9.306e-04   72.36   <2e-16 ***
+x3          8.992e-05  1.925e-06   46.72   <2e-16 ***
+---
+Signif. codes:  0 *** 0.001 ** 0.01 * 0.05 . 0.1   1
+Residual standard error: 0.6369 on 453 degrees of freedom
+  (12 observations deleted due to missingness)
+Multiple R-squared:  0.9981,	Adjusted R-squared:  0.9981 
+F-statistic: 1.179e+05 on 2 and 453 DF,  p-value: < 2.2e-16
+> summary(ts1)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  315.2   324.1   335.4   337.0   349.0   365.0 
+> sd(ts1)
+[1] 14.49841
+
+> summary(season.ols)
+Call:
+lm(formula = season ~ sin(2 * pi/per * x1) + cos(2 * pi/per * 
+    x1))
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.46756 -0.51942 -0.01224  0.47522  1.53618 
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            0.1056     0.0297   3.554 0.000419 ***
+sin(2 * pi/per * x1)  -0.5714     0.0420 -13.605  < 2e-16 ***
+cos(2 * pi/per * x1)  -1.3263     0.0420 -31.577  < 2e-16 ***
+---
+Signif. codes:  0 *** 0.001 ** 0.01 * 0.05 . 0.1   1
+Residual standard error: 0.6342 on 453 degrees of freedom
+Multiple R-squared:  0.723,	Adjusted R-squared:  0.7218 
+F-statistic: 591.1 on 2 and 453 DF,  p-value: < 2.2e-16
+> summary(ts2)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-1.3287 -0.8311  0.1055  0.1055  1.0422  1.5398 
+> sd(ts2)
+[1] 1.022269

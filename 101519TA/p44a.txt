@@ -1,0 +1,8 @@
+> co2_t.ar2
+Call:
+arima(x = co2_t, order = c(2, 0, 0), seasonal = c(0, 0, 0))
+Coefficients:
+         ar1      ar2  intercept
+      1.6114  -0.8920    -0.1015
+s.e.  0.0209   0.0209     0.1027
+sigma^2 estimated as 0.378:  log likelihood = -427.46,  aic = 862.92

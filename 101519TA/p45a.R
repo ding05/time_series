@@ -1,0 +1,1 @@
+tsdiag(co2_t.ar2)
